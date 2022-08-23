@@ -1,0 +1,2 @@
+# easysnp
+A SNP Project
