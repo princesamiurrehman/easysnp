@@ -1,0 +1,47 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container-fluid">
+    <nav class="navbar fixed-top navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand">Easy - SNP</a>
+                <form class="d-flex btn-group">
+                    <button type="button" class="btn btn-primary">Home</button><br>
+                    <button type="button" class="btn btn-primary">Downloads</button>
+                    <button type="button" class="btn btn-primary">Contact</button>
+                </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <h1>Hi Viewers!</h1>
+    <p>{{ website }} is the tools that makes searches related to SNP easy and comfortable.</p><hr>
+
+    <form class="row g-3">
+        <div class="col-auto">
+            <label  class="visually-hidden" >snp</label>
+                <input type="text" readonly class="form-control-plaintext"  value="SNP - Database">
+        </div>
+        <div class="col-auto">
+            <label  class="visually-hidden"></label>
+                <input type="text" class="form-control" id="term" >
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Search</button>
+        </div>
+        <div class="col-auto form-check form-switch">
+            <input class="form-check-input" type="checkbox">
+                <label class="form-check-label" >missense</label>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
